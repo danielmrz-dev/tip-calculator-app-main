@@ -157,14 +157,14 @@ body .container .tip-percentage .grid-numbers .custom-percent:hover {
   cursor: pointer;
 }
 body .container .tip-percentage .grid-numbers .custom-percent::-moz-placeholder {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #00494d;
   font-weight: 700;
   opacity: 0.6;
   transform: translateY(2px);
 }
 body .container .tip-percentage .grid-numbers .custom-percent::placeholder {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #00494d;
   font-weight: 700;
   opacity: 0.6;
