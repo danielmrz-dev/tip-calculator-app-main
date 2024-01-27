@@ -5,6 +5,7 @@
         min-height: 100vh;    
         .container {
             max-width: 900px;
+            min-height: 460px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 2rem;

@@ -46,7 +46,7 @@ body {
     justify-content: center;
     .container {
         background-color: variables.$White;
-        padding: 2rem;
+        padding: 2rem 2.5rem;
         .form {
             display: grid;
             gap: .2rem;
@@ -160,7 +160,7 @@ body {
             }
             .reset {
                 background-color: variables.$Strong-cyan;
-                color: variables.$Very-dark-cyan;
+                color: variables.$White;
                 font-size: 1.2rem;
                 text-transform: uppercase;
                 padding: .5rem;
@@ -175,6 +175,7 @@ body {
             }
             .calculate {
                 @extend .reset;
+                color: variables.$Very-dark-cyan;
                 background-color: variables.$Very-light-grayish-cyan;
                 font-weight: 800;
                 margin-top: 2rem;

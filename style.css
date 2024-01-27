@@ -4,6 +4,7 @@
   }
   body .container {
     max-width: 900px;
+    min-height: 460px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 2rem;
@@ -52,7 +53,7 @@
   }
 }
 body {
-  background-color: #c5e4e7;
+  background-color: #d3c5e7;
   font-family: "Space Mono", sans-serif;
   display: flex;
   flex-direction: column;
@@ -61,7 +62,7 @@ body {
 }
 body .container {
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 2rem 2.5rem;
 }
 body .container .form {
   display: grid;
@@ -69,7 +70,7 @@ body .container .form {
   position: relative;
 }
 body .container .form .titles {
-  color: #5e7a7d;
+  color: #6c5e7d;
   font-weight: 700;
 }
 body .container .form .error-msg-bill {
@@ -86,17 +87,17 @@ body .container .form .dolar-icon {
 }
 body .container .form .form-bill {
   grid-area: 2/1/3/3;
-  background-color: #f4fafa;
+  background-color: #f7f4fa;
   padding: 0.5rem 1rem;
   text-align: end;
   border-radius: 5px;
-  color: #00494d;
+  color: #28004d;
   font-size: 1.2rem;
   font-weight: 800;
   width: 100%;
 }
 body .container .form .form-bill:focus {
-  outline: 2px solid #26c0ab;
+  outline: 2px solid #7d46c9;
 }
 body .container .form .form-bill:hover {
   cursor: pointer;
@@ -117,7 +118,7 @@ body .container .tip-percentage {
   margin: 1.5rem 0;
 }
 body .container .tip-percentage .select-tip {
-  color: #5e7a7d;
+  color: #6c5e7d;
   font-weight: 700;
   grid-area: 1/1;
 }
@@ -126,7 +127,7 @@ body .container .tip-percentage .grid-numbers {
   gap: 0.8rem;
 }
 body .container .tip-percentage .grid-numbers .percent {
-  background-color: #00494d;
+  background-color: #28004d;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
@@ -137,35 +138,35 @@ body .container .tip-percentage .grid-numbers .percent {
 }
 body .container .tip-percentage .grid-numbers .percent:hover {
   scale: 1.03;
-  background-color: rgba(38, 192, 171, 0.4901960784);
-  color: #00494d;
+  background-color: rgba(89, 38, 192, 0.4901960784);
+  color: #28004d;
 }
 body .container .tip-percentage .grid-numbers .custom-percent {
-  background-color: #f4fafa;
+  background-color: #f7f4fa;
   padding: 0.5rem 1rem;
   text-align: end;
   border-radius: 5px;
-  color: #00494d;
+  color: #28004d;
   font-size: 1.2rem;
   font-weight: 800;
   width: 100%;
 }
 body .container .tip-percentage .grid-numbers .custom-percent:focus {
-  outline: 2px solid #26c0ab;
+  outline: 2px solid #7d46c9;
 }
 body .container .tip-percentage .grid-numbers .custom-percent:hover {
   cursor: pointer;
 }
 body .container .tip-percentage .grid-numbers .custom-percent::-moz-placeholder {
   font-size: 1.3rem;
-  color: #00494d;
+  color: #28004d;
   font-weight: 700;
   opacity: 0.6;
   transform: translateY(2px);
 }
 body .container .tip-percentage .grid-numbers .custom-percent::placeholder {
   font-size: 1.3rem;
-  color: #00494d;
+  color: #28004d;
   font-weight: 700;
   opacity: 0.6;
   transform: translateY(2px);
@@ -177,7 +178,7 @@ body .container .form-two {
   margin: 0 0 1.5rem 0;
 }
 body .container .form-two .form-people {
-  color: #5e7a7d;
+  color: #6c5e7d;
   font-weight: 700;
 }
 body .container .form-two .error-msg-people {
@@ -194,27 +195,27 @@ body .container .form-two .person-icon {
 }
 body .container .form-two .number-people {
   grid-area: 2/1/3/3;
-  background-color: #f4fafa;
+  background-color: #f7f4fa;
   padding: 0.5rem 1rem;
   text-align: end;
   border-radius: 5px;
-  color: #00494d;
+  color: #28004d;
   font-size: 1.2rem;
   font-weight: 800;
   width: 100%;
 }
 body .container .form-two .number-people:focus {
-  outline: 2px solid #26c0ab;
+  outline: 2px solid #7d46c9;
 }
 body .container .form-two .number-people:hover {
   cursor: pointer;
 }
 body .container .result {
   margin: 1rem 0;
-  background-color: #00494d;
+  background-color: #28004d;
   display: grid;
   gap: 1.2rem;
-  color: #f4fafa;
+  color: #f7f4fa;
   border-radius: 10px;
 }
 body .container .result .result-container {
@@ -228,18 +229,18 @@ body .container .result .result-container .result-text2 {
   font-size: 0.8rem;
   font-weight: 700;
   grid-column-start: 1;
-  color: #7f9c9f;
+  color: #8f7f9f;
 }
 body .container .result .result-container .result-numbers {
   grid-area: 1/2/3/4;
   align-self: center;
   font-weight: 700;
-  color: #26c0ab;
+  color: #7d46c9;
   text-align: end;
 }
 body .container .result .reset, body .container .result .calculate {
-  background-color: #26c0ab;
-  color: #00494d;
+  background-color: #7d46c9;
+  color: #ffffff;
   font-size: 1.2rem;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -253,15 +254,16 @@ body .container .result .reset:hover, body .container .result .calculate:hover {
   font-weight: 800;
 }
 body .container .result .calculate {
-  background-color: #f4fafa;
+  color: #28004d;
+  background-color: #f7f4fa;
   font-weight: 800;
   margin-top: 2rem;
 }
 body .container .result .calculate:hover {
-  background-color: #7f9c9f;
+  background-color: #8f7f9f;
 }
 
 .background {
-  background-color: #26c0ab;
-  color: #00494d;
+  background-color: #7d46c9;
+  color: #28004d;
 }/*# sourceMappingURL=style.css.map */

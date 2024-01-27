@@ -8,8 +8,8 @@ for (let i = 0; i <= 5; i++) {
 let chosenPercentage = '';
 function escolherPorcentagem(chosen, notChosen1, notChosen2, notChosen3, notChosen4) {
     if (percentage[chosen].checked) {
-        labels[chosen].style.background = '#26c0ab';
-        labels[chosen].style.color = '#00494d';
+        labels[chosen].style.background = '#934ef5';
+        labels[chosen].style.color = '#28004d';
         labels[notChosen1].style.background = '';
         labels[notChosen1].style.color = '';        
         labels[notChosen2].style.background = '';
