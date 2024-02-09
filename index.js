@@ -42,7 +42,7 @@ const errorMsgPeople = document.querySelector('.error-msg-people');
 const errorMsgBill = document.querySelector('.error-msg-bill');
 
 function calculate() {
-    if (numberOfPeople.value.length == 0) {
+    if (+numberOfPeople.value  < 1) {
         errorMsgPeople.style.opacity = '1'; 
         numberOfPeople.style.outline = '2px solid red';
     } else {
@@ -50,7 +50,7 @@ function calculate() {
         numberOfPeople.style.outline = '';
     }
 
-    if (bill.value.length == 0) {
+    if (+bill.value < 1) {
         errorMsgBill.style.opacity = '1'; 
         bill.style.outline = '2px solid red';
     } else {
@@ -58,12 +58,12 @@ function calculate() {
         bill.style.outline = '';
     }
     
-    if (bill.value.length != 0 && numberOfPeople.value.length !=0) {
+    if (+bill.value !== 0 && +numberOfPeople.value !== 0) {
         errorMsgPeople.style.opacity = '0';
         errorMsgBill.style.opacity = '0';
         numberOfPeople.style.outline = '';
         bill.style.outline = '';
-        if (customPercent.value.length == 0) {        
+        if (+customPercent.value === 0) {        
             let tipAmount = `${(parseFloat(bill.value * chosenPercentage)) / numberOfPeople.value}`;
             resultPerPerson.innerHTML = `$${parseFloat(tipAmount).toFixed(2)}`;
             
